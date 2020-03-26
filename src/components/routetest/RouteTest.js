@@ -33,16 +33,14 @@ class RouteTest extends React.Component {
     switch (this.state.route) {
       case '/about': Child = About; break;
       case '/inbox': Child = Inbox; break;
-      case '/home': Child = Home; break;
       default: Child = Home;
     }
     return (
       <div>
         <h1>App</h1>
         <ul>
-          <li><a href="/home">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/inbox">Inbox</a></li>
+          <li><a href="#/about">About</a></li>
+          <li><a href="#/inbox">Inbox</a></li>
         </ul>
         <Child />
       </div>
