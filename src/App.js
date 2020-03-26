@@ -1,5 +1,5 @@
 import React from 'react';
-import WrappedComponent   from './components/WrappedComponent';
+import RouteTest from './components/routetest/RouteTest';
 
 import './App.css';
 
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <WrappedComponent   />
+      <RouteTest />
     </div>
   );
 }
