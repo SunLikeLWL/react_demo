@@ -1,5 +1,5 @@
 import React from 'react';
-import AutoFocusInput  from './components/AutoFocusInput';
+import WrappedComponent   from './components/WrappedComponent';
 
 import './App.css';
 
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <AutoFocusInput  />
+      <WrappedComponent   />
     </div>
   );
 }
