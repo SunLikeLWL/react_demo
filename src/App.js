@@ -1,15 +1,23 @@
-import React from 'react';
-import RouteTest from './components/routetest/RouteTest';
+import React from 'react'
 
-import './App.css';
 
-function App() {
+// 首先我们需要导入一些组件...
+import { Router, Route, Link } from 'react-router-dom';
 
-  return (
-    <div className="App">
-      <RouteTest />
-    </div>
-  );
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>App</h1>
+        <ul>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/inbox">Inbox</Link></li>
+        </ul>
+        {this.props.children}
+      </div>
+    )
+  }
 }
 
 export default App;
